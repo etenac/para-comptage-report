@@ -29,10 +29,10 @@
 				<td>Nombre d'appels : </td>
 				<td id="nbCall" class="value">0</td>
 			</tr><tr>
-				<td>Temps total de communication total : </td>
+				<td>Temps total de communication : </td>
 				<td id="totalTimeInSec" class="value">00h 00m 00s</td>
 			</tr><tr>
-				<td>Nombre d'appels moyen/jour: </td>
+				<td>Nombre d'appels moyen par jour: </td>
 				<td id="averageNbCallsPerDay" class="value">0</td>
 			</tr><tr>
 				<td>Temps de comm moyen par jour : </td>
@@ -40,14 +40,29 @@
 			</tr><tr>
 				<td>Temps de comm moyen par appel : </td>
 				<td id="averageTimeInSec" class="value">00h 00m 00s</td>
+            </tr><tr>
+                <td>Appel le plus court : </td>
+                <td id="minDuration" class="value">00h 00m 00s</td>
+            </tr><tr>
+                <td>Appel le plus long : </td>
+                <td id="maxDuration" class="value">00h 00m 00s</td>
 			</tr>
 		</table>
 	</div>
     
-	<div id="chart_table"></div>
-    <div id="chart_reason" style="height: 500px;" ></div>
+    
+    <div id="chart_daily_nb" style="height: 300px;" ></div>
+    <div id="chart_daily_duration"style="height: 300px;"  ></div>
+    
+	
+    <div id="chart_reason_nbcalls" style="height: 600px;" ></div>
+    <div id="chart_reason_duration" style="height: 600px;" ></div>
+    <div id="chart_reason_table"></div>
+    
     <div id="chart_weekday_nb"></div>
     <div id="chart_weekday_duration"></div>
+    
+    <div id="chart_table"></div>
     
 </body>
 </html>
